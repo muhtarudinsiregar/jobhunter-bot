@@ -1,10 +1,6 @@
 const puppeteer = require("puppeteer");
 
-const init = {
-  url: "http://bursakerjadepnaker.com",
-  size: 1024,
-  path: "result/google.png"
-};
+const init = require("./init.js");
 
 async function getPic() {
   const browser = await puppeteer.launch({ args: ["--no-sandbox"] });
